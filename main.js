@@ -6,6 +6,8 @@ function preload() {
   reno_img = loadImage("reno.png");
   bufanda_img = loadImage("bufanda.png");
   fondo = loadImage("fondo_nieve.png");
+
+  musica = loadSound("navidad.mp3");
   
 }
 
@@ -43,3 +45,8 @@ function draw() {
 function take_snapshot(){    
   save('myFilterImage.png');
 }
+
+function play(){
+  musica.play();
+}
+
